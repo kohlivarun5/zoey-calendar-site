@@ -175,37 +175,13 @@ h1 span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 11px;
-  min-height: 58px;
-  padding: 0 18px;
-  border-radius: 14px;
-  background: #111827;
-  color: #fff;
+  line-height: 0;
   text-decoration: none;
-  box-shadow: 0 12px 28px rgba(17, 24, 39, 0.22);
 }
 
-.store-copy {
-  display: grid;
-  gap: 1px;
-  line-height: 1;
-}
-
-.store-copy small {
-  font-size: 0.72rem;
-  font-weight: 700;
-}
-
-.store-copy strong {
-  font-size: 1.34rem;
-  font-weight: 800;
-}
-
-.apple-mark {
-  width: 26px;
-  height: 26px;
-  flex: 0 0 auto;
-  fill: currentColor;
+.app-store-badge {
+  width: auto;
+  height: 52px;
 }
 
 .free-label {
@@ -478,27 +454,16 @@ footer {
   }
 
   .app-store-button {
-    min-height: 56px;
-    padding: 0 14px;
-    gap: 9px;
+    flex: 0 0 auto;
+  }
+
+  .app-store-badge {
+    height: 48px;
   }
 
   .cta-stack {
     justify-content: center;
     width: fit-content;
-  }
-
-  .apple-mark {
-    width: 22px;
-    height: 22px;
-  }
-
-  .store-copy small {
-    font-size: 0.66rem;
-  }
-
-  .store-copy strong {
-    font-size: 1.16rem;
   }
 
   .free-label {
