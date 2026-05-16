@@ -391,9 +391,11 @@ footer {
 @media (max-width: 640px) {
   .topbar {
     padding: 10px 12px;
+    justify-content: center;
   }
 
   .brand {
+    justify-content: center;
     max-width: 190px;
   }
 
@@ -424,27 +426,49 @@ footer {
   footer {
     width: 368px;
     max-width: calc(100% - 22px);
-    margin-left: 11px;
-    margin-right: 11px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero {
     padding: 18px 0 24px;
+    justify-items: center;
   }
 
   .hero-copy,
   .lede,
   .cta-stack {
     width: 100%;
-    max-width: 368px;
+    max-width: 348px;
+  }
+
+  .hero-copy,
+  .cta-stack {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero-copy,
+  .value-band article,
+  .screens,
+  .support,
+  .shot figcaption,
+  footer {
+    text-align: center;
   }
 
   h1 {
+    width: fit-content;
     max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 3.55rem;
   }
 
   .lede {
+    max-width: 18.5rem;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 1.04rem;
   }
 
@@ -457,6 +481,11 @@ footer {
     min-height: 56px;
     padding: 0 14px;
     gap: 9px;
+  }
+
+  .cta-stack {
+    justify-content: center;
+    width: fit-content;
   }
 
   .apple-mark {
@@ -475,6 +504,11 @@ footer {
   .free-label {
     max-width: 7rem;
     font-size: 0.76rem;
+    text-align: center;
+  }
+
+  .ad-visual {
+    justify-content: center;
   }
 
   .ad-visual img {
@@ -509,6 +543,12 @@ footer {
   footer {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .section-heading,
+  .support-copy,
+  footer {
+    justify-items: center;
   }
 
   .shot img {
