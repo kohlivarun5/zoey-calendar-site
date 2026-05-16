@@ -164,24 +164,57 @@ h1 span {
 }
 
 .cta-stack {
-  display: grid;
-  gap: 12px;
-  justify-items: start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
   margin-top: 28px;
 }
 
-.hero-button {
+.app-store-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
   min-height: 58px;
-  padding: 0 26px;
+  padding: 0 18px;
+  border-radius: 14px;
   background: #111827;
-  font-size: 1.04rem;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 12px 28px rgba(17, 24, 39, 0.22);
 }
 
-.cta-stack p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.95rem;
+.store-copy {
+  display: grid;
+  gap: 1px;
+  line-height: 1;
+}
+
+.store-copy small {
+  font-size: 0.72rem;
   font-weight: 700;
+}
+
+.store-copy strong {
+  font-size: 1.34rem;
+  font-weight: 800;
+}
+
+.apple-mark {
+  width: 26px;
+  height: 26px;
+  flex: 0 0 auto;
+  fill: currentColor;
+}
+
+.free-label {
+  margin: 0;
+  color: var(--teal-dark);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .ad-visual {
@@ -420,10 +453,28 @@ footer {
     font-size: 1.8rem;
   }
 
-  .hero-button {
-    width: 100%;
+  .app-store-button {
     min-height: 56px;
-    padding: 0 18px;
+    padding: 0 14px;
+    gap: 9px;
+  }
+
+  .apple-mark {
+    width: 22px;
+    height: 22px;
+  }
+
+  .store-copy small {
+    font-size: 0.66rem;
+  }
+
+  .store-copy strong {
+    font-size: 1.16rem;
+  }
+
+  .free-label {
+    max-width: 7rem;
+    font-size: 0.76rem;
   }
 
   .ad-visual img {
